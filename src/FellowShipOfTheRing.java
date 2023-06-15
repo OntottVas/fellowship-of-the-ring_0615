@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class FellowShipOfTheRing {
     public static void main(String[] args) {
-       // TODO
+        // TODO
         Set<String> dwarves = new HashSet<>(List.of("Gimli"));
 
         Set<String> elves = new HashSet<>(List.of("Legolas"));
@@ -21,7 +21,15 @@ public class FellowShipOfTheRing {
         fellowship.addAll(elves);
         fellowship.add("Gandalf");
 
+        fellowship.remove("Gandalf");
 
+        fellowship.add("Gandalf the White");
 
+        fellowship.removeAll(hobbits);
+        System.out.println(fellowship.containsAll(hobbits));
+
+        System.out.println(fellowship.contains("Boromir"));
+        fellowship.remove("Boromir");
+        System.out.println(fellowship.contains("Boromir"));
     }
 }
