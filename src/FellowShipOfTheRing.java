@@ -14,5 +14,14 @@ public class FellowShipOfTheRing {
 
         Set<String> hobbits = new HashSet<>(List.of("Frodo", "Sam", "Merry", "Pippin"));
 
+        Set<String> fellowship = new HashSet<>();
+        fellowship.addAll(humans);
+        fellowship.addAll(hobbits);
+        fellowship.addAll(dwarves);
+        fellowship.addAll(elves);
+        fellowship.add("Gandalf");
+
+
+
     }
 }
